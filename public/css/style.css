@@ -6,9 +6,10 @@ h1 {
   color: white;
   font-family: 'Varela Round', sans-serif;
   text-align: center;
+  margin-top: 2cm;
 }
 
-button.home {
+form.home {
     color: white;
     font-family: 'Varela Round', sans-serif;  
     display: block;

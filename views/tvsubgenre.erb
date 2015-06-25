@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title> Rainy Day - TV Subgenre</title>
+  </head> 
+  <body class="home">
+    <%  if @genre.tvgenre.tvsubgenre == @sitcom_tv %>
+    <h1> TV Shows: Comedy - Sitcom </h1>
+    <%  elsif @genre.tvgenre.tvsubgenre == @talk_show_tv %>
+    <h1> TV Shows: Comedy - Talk Show </h1>   
+    <%  elsif @genre.tvgenre.tvsubgenre == @satire_tv %>
+    <h1> TV Shows: Comedy - Satire </h1>
+    <% end %>
+  </body>
+</html>
+
+  

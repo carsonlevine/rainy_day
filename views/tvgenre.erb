@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title> Rainy Day - TV Genre</title>
+  </head> 
+  <body class="home">
+    <%  if @genre.tvgenre == @comedy_tv %>
+    <h1> TV Shows: Comedy </h1>
+      <form method="POST" action="/tvsubgenre">
+        <input type="radio" name="sitcom_tv" value="Sitcom">Sitcom
+        <br>
+        <input type="radio" name="satire_tv" value="Satire">Satire
+        <br>
+        <input type="radio" name="talk_show_tv" value="Talk-Show">Talk-Show
+        <br>
+        <input type="submit">
+      </form>
+    <% end %>
+  </body>
+</html>
+
+  
