@@ -1,4 +1,34 @@
-body.view {
+body.home {
+  background-color: #005CB8;
+}
+
+h1 {
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+button.home {
+    color: white;
+    font-family: 'Varela Round', sans-serif;  
+    display: block;
+    font-size: 1.1em;
+/*     font-weight: bold; */
+/*     text-transform: uppercase; */
+    padding: 10px 15px;
+    margin: 20px auto;
+    color: #ccc;
+    background-color: #555;
+    background: -webkit-linear-gradient(#888, #555);
+    background: linear-gradient(#888, #555);
+    border: 0 none;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 #000;
+    box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+/* body.view {
   background-color: blue;
   font-family: 'Questrial', sans-serif;
   color: white;
@@ -19,4 +49,4 @@ body.victoria {
   background-image: url("http://static.001.students.flatironschool.com/images/vicfriedman.jpeg");
   font-family: 'Questrial', sans-serif;
   color: white;
-}
+} */
