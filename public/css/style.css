@@ -28,26 +28,3 @@ form.home {
     box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
     cursor: pointer;
 }
-
-/* body.view {
-  background-color: blue;
-  font-family: 'Questrial', sans-serif;
-  color: white;
-}
-body.puppies {
-  background-image: url("http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-500-375.jpg");
-  font-family: 'Questrial', sans-serif;
-  color: white;
-  font-size: 300%;
-}
-body.hedgehogs {
-  background-image: url("http://media.giphy.com/media/P0YuSLm6q4xfq/giphy.gif");
-  font-family: 'Questrial', sans-serif;
-  color: white;
-}
-
-body.victoria {
-  background-image: url("http://static.001.students.flatironschool.com/images/vicfriedman.jpeg");
-  font-family: 'Questrial', sans-serif;
-  color: white;
-} */
