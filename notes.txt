@@ -1,0 +1,6 @@
+Notes on movie integration
+1) @service is now @choice[medium abrev.]
+
+2) class Service is now class Choice
+
+3) classes Genre and SubGenre are now classes Genre[medium a    brev.] and SubGenre[medium abrev.]

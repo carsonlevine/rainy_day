@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title> Rainy Day - Movie Genre </title>
+  </head> 
+  <body class="home">   
+    <%  if @movie.mvgenre == "Comedy Movies" %>
+    <h1> Movies: Comedy </h1>
+      <form method="POST" action="/mv_results">
+        <input type="radio" name="stand_up_mvc" value="Stand Up"> Stand Up
+        <br>
+        <input type="radio" name="romcom_mvc" value="Romantic Comedies"> Romantic Comedies
+        <br>
+        <input type="radio" name="satire_mvc" value="Satirical Movies"> Satire
+        <br>
+        <input type="radio" name="slapstick_mvc" value="Slapstick Movies"> Slapstick
+        <br>
+        <input type="submit">
+      </form>
+    <%  elsif @movie.mvgenre == "Drama Movies"%>
+    <h1> Movies: Drama </h1>
+      <form method="POST" action="/mvsubgenre">
+        <input type="radio" name="family_issues_mvd" value="Family Issue Movies"> Family Issues
+        <br>
+        <input type="radio" name="romdram_mvd" value="Romantic Drama Movies"> Romantic Dramas
+        <br>
+        <input type="radio" name="period_mvd" value="Period Drama Movies"> Period Pieces
+        <br>
+        <input type="radio" name="tearj_mvd" value="Tearjerker Movies"> Tearjerkers
+        <br>
+        <input type="submit">
+      </form>
+    <% end %>
+  </body>
+</html>
