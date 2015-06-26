@@ -14,7 +14,7 @@ class MyApp < Sinatra::Base
   end
   
   post '/tvgenre' do
-    @tvgenre = GenreTV.new(params["tvgenre"])
+    @genre = Genre.new(params["tvgenre"])
     erb :tvgenre
   end
  
