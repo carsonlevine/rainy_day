@@ -8,18 +8,20 @@
   <body class="home">
     <%  if @genre.tvgenre == "Comedy" %>
     <h1> TV Shows: Comedy </h1>
-      <form method="POST" action="/tvsubgenre">
+      <form method="POST" action="/tvsubgenre" class="home">
         <input type="radio" name="subgenre" value="Sitcom">Sitcom
         <br>
         <input type="radio" name="subgenre" value="Satire">Satire
         <br>
         <input type="radio" name="subgenre" value="Talk-Show">Talk-Show
         <br>
-        <input type="submit">
+        <input type="radio" name="subgenre" value="Sketch TV">Sketch TV
+        <br>
+        <input type="submit" value="Next">
       </form>
     <% elsif @genre.tvgenre== "Drama" %>
           <h1> TV Shows: Drama </h1>
-      <form method="POST" action="/tvsubgenre">
+      <form method="POST" action="/tvsubgenre" class="home">
         <input type="radio" name="subgenre" value="Workplace">Workplace Drama
         <br>
         <input type="radio" name="subgenre" value="Crime">Crime
@@ -28,22 +30,22 @@
         <br>
         <input type="radio" name="subgenre" value="Family">Family Dramas
         <br>
-        <input type="submit">
+        <input type="submit" value="Next">
       </form>
     <% elsif @genre.tvgenre== "Sci-Fi" %>
           <h1> TV Shows: Sci-Fi/Fantasy </h1>
-      <form method="POST" action="/tvsubgenre">
+      <form method="POST" action="/tvsubgenre" class="home">
         <input type="radio" name="subgenre" value="Futuristic">Futuristic
         <br>
         <input type="radio" name="subgenre" value="Medieval">Medieval
         <br>
         <input type="radio" name="subgenre" value="Dystopian">Dystopian
         <br>
-        <input type="submit">
+        <input type="submit" value="Next">
       </form>
     <% elsif @genre.tvgenre== "Reality" %>
           <h1> TV Shows: Reality </h1>
-      <form method="POST" action="/tvsubgenre">
+      <form method="POST" action="/tvsubgenre" class="home">
         <input type="radio" name="subgenre" value="Food/Cooking">Food/Cooking
         <br>
         <input type="radio" name="subgenre" value="Talent Show">Talent Show
@@ -52,18 +54,18 @@
         <br>
         <input type="radio" name="subgenre" value="Petty Drama">Petty Drama
         <br>
-        <input type="radio" name="subgenre" value="Workplace">Workplace
+        <input type="radio" name="subgenre" value="Workplace Reality">Workplace
         <br>
-        <input type="submit">
+        <input type="submit" value="Next">
       </form>
     <% elsif @genre.tvgenre== "Kids" %>
           <h1> TV Shows: Kids </h1>
-      <form method="POST" action="/tvsubgenre">
+      <form method="POST" action="/tvsubgenre" class="home">
         <input type="radio" name="subgenre" value="Ages 0-6">Ages 0-6
         <br>
         <input type="radio" name="subgenre" value="Ages 7+">Ages 7+
         <br>
-        <input type="submit">
+        <input type="submit" value="Next">
       </form>
     <% end %>
   </body>

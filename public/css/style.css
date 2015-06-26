@@ -1,27 +1,49 @@
+@font-face {
+font-family: Pier;
+src: url("../pier-regular.otf") format("opentype");
+}
+
 body.home {
-  background-color: #005CB8;
+  background-color: #36465D;
 }
 
 h1 {
   color: white;
-  font-family: 'Varela Round', sans-serif;
+  font-family: Pier;
   text-align: center;
   margin-top: 2cm;
 }
 
+h2 {
+  color: white;
+  font-family: Pier;
+  text-align: center;
+  margin-top: 2cm;
+}
+input[type=submit] {
+    width: 15em;  
+    height: 15em;
+    font-size: 30px; 
+}
+input[type=radio] {
+    width: 100%;
+    height: 2em;
+}
+
 form.home {
-    color: white;
-    font-family: 'Varela Round', sans-serif;  
+    font-family: Pier;
+    display: inline-block;
+    text-align: center;
     display: block;
-    font-size: 1.1em;
+    font-size: 2em;
 /*     font-weight: bold; */
 /*     text-transform: uppercase; */
     padding: 10px 15px;
     margin: 20px auto;
-    color: #ccc;
-    background-color: #555;
-    background: -webkit-linear-gradient(#888, #555);
-    background: linear-gradient(#888, #555);
+    color: black;
+    background-color: #D5D5D5;
+    background: -webkit-linear-gradient(#888, #D5D5D5)
+    background: linear-gradient(#888, #D5D5D5);
     border: 0 none;
     border-radius: 3px;
     text-shadow: 0 -1px 0 #000;

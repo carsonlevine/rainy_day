@@ -100,21 +100,150 @@ class MyApp < Sinatra::Base
             :snl => ["Saturday Night Live", "http://ib2.huluim.com/show/77?size=220x124&region=us", "http://www.hulu.com/saturday-night-live"],
              :amy_schumer => ["Inside Amy Schumer", "http://ib4.huluim.com/show/14027?size=220x124&region=us", "http://www.hulu.com/inside-amy-schumer"],
              :kroll_show => ["Kroll Show", "http://ib2.huluim.com/show/12837?size=220x124&region=us", "http://www.hulu.com/kroll-show"],
-            :loiter_squad => ["Loiter Squad", "http://ib2.huluim.com/show/77?size=220x124&region=us", "http://www.hulu.com/saturday-night-live"]
+            :loiter_squad => ["Loiter Squad", "http://ib1.huluim.com/show/22016?size=220x124&region=us", "http://www.hulu.com/loiter-squad"]
              },
            :hbogo => [],
           :prime => [],
            :other =>[]
       },
     },
-    :drama_tv => {
-          :netflix => [],
-          :hulu => [],
-           :hbogo => [],
-           :prime => [],
-          :other =>[]
+   :drama_tv => {
+      :workplace =>{
+        :netflix => {
+          :house => ["House, M.D.", "http://cdn1.nflximg.net/webp/5479/4185479.webp", "http://www.netflix.com/title/70136117"], 
+          :scandal => ["Scandal", "http://cdn1.nflximg.net/webp/0105/21530105.webp", "http://www.netflix.com/title/70197057"],
+          :greys => ["Grey’s Anatomy", "http://cdn0.nflximg.net/webp/0588/21530588.webp", "http://www.netflix.com/title/70140391"],
+          :west_wing => ["West Wing", "http://cdn0.nflximg.net/webp/1150/8501150.webp", "http://www.netflix.com/title/70157152"],
+          :mad_men => ["Mad Men", "http://cdn1.nflximg.net/webp/9631/21019631.webp", "http://www.netflix.com/title/70136135"],
+          :house_of_cards => ["House of Cards", "http://cdn1.nflximg.net/images/8773/21068773.jpg", "http://www.netflix.com/title/70178217"]
+          },
+        :hulu => {
+          :empire => ["Empire", "http://ib4.huluim.com/show/21027?size=220x124&region=us", "http://www.hulu.com/empire"]
+          },
+        :hbogo => {
+          :newsroom => ["The Newsroom", "http://ecx.images-amazon.com/images/I/41btVtjR67L._PI_PJStripe-HD-Only-500px,TopLeft,0,0_AA160_.jpg", "http://www.hbogo.com/#search&browseMode=browseGrid?searchTerm=newsroom/browse&assetID=GOROSTGP35914?assetType=SERIES?browseMode=browseGrid/"], 
+          :true_detective => ["True Detective", "http://ecx.images-amazon.com/images/I/51aFRg8vXfL._PI_PJStripe-HD-Only-500px,TopLeft,0,0_AA160_.jpg", "http://www.hbogo.com/#search&browseMode=browseGrid?searchTerm=true%20detective/browse&assetID=GOROSTGP41968?assetType=SERIES?browseMode=browseGrid/"]
+          },
+        :prime => {
+          
+          :good_wife => ["The Good Wife", "http://ecx.images-amazon.com/images/I/41gT-rWN6NL._PI_PJStripeHD-Prime-500px02,TopLeft,0,0_AA160_.jpg", "http://www.amazon.com/Home/dp/B0064MGU98/ref=sr_1_2?ie=UTF8&qid=1435330613&sr=8-2&keywords=good+wife"], 
+          :suits => ["Suits", "http://ecx.images-amazon.com/images/I/51ueG5wsaTL._PI_PJStripeHD-Prime-500px02,TopLeft,0,0_AA160_.jpg", "http://www.amazon.com/Inside-Track/dp/B005544V6A/ref=sr_1_1?s=movies-tv&ie=UTF8&qid=1435330646&sr=1-1&keywords=suits&pebp=1435330672788&perid=0BSPEW5GNRJ6786RAZG3"]
+    
+          },
+          :other =>{}
+        },
+      :crimes => {
+        :netflix => {
+          :bones => ["Bones", "http://cdn0.nflximg.net/webp/9298/11379298.webp","http://www.netflix.com/title/70136123"], 
+          :l_o_svu => ["Law and Order SVU", "http://cdn1.nflximg.net/webp/3687/12043687.webp", "http://www.netflix.com/title/70140403"], 
+          :blacklist => ["Blacklist", "http://cdn0.nflximg.net/webp/2182/10922182.webp", "http://www.netflix.com/title/70281312"], 
+          :sherlock => ["Sherlock", "http://cdn0.nflximg.net/webp/7250/9747250.webp", "http://www.netflix.com/title/70202589"], 
+          :luther => ["Luther","http://cdn1.nflximg.net/webp/0899/3960899.webp", "http://www.netflix.com/title/70175633"], 
+          :dexter=> ["Dexter", "http://cdn0.nflximg.net/webp/1274/3861274.webp", "http://www.netflix.com/title/70136126"]
+          },
+        :hulu => {
+          :csi => ["CSI","http://ib2.huluim.com/show/7889?size=220x124&region=us","http://www.hulu.com/csi-crime-scene-investigation"]
+          },
+        :hbogo => {
+          :boardwalk =>  ["Boardwalk Empire","http://ecx.images-amazon.com/images/I/51gqo4clTcL._PI_PJStripe-HD-Only-500px,TopLeft,0,0_AA160_.jpg","http://www.hbogo.com/#search&browseMode=browseGrid?searchTerm=boardwalk/browse&assetID=GOROSTGP29677?assetType=SERIES?browseMode=browseGrid/"]
+          },
+        :prime => {},
+          :other =>{}
+        },
+      :teen =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :family => {
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        }
       },
 
+    :sci_fi_tv => {
+      :futuristic =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :medieval => {
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :dystopian =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        }
+      },
+ 
+       
+     :reality_tv => {
+       :food =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :talent => {
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :survival =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :dramatic => {
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+       :workplace_reality =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        }
+      },
+     :kids_tv => {
+       :age_0 =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+       :age_7 => {
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+       }
 }
     @subgenre = SubGenreTV.new(params["subgenre"])
     erb :tvsubgenre

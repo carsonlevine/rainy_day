@@ -79,7 +79,7 @@
             :snl => ["Saturday Night Live", "http://ib2.huluim.com/show/77?size=220x124&region=us", "http://www.hulu.com/saturday-night-live"],
              :amy_schumer => ["Inside Amy Schumer", "http://ib4.huluim.com/show/14027?size=220x124&region=us", "http://www.hulu.com/inside-amy-schumer"],
              :kroll_show => ["Kroll Show", "http://ib2.huluim.com/show/12837?size=220x124&region=us", "http://www.hulu.com/kroll-show"],
-            :loiter_squad => ["Loiter Squad", "http://ib2.huluim.com/show/77?size=220x124&region=us", "http://www.hulu.com/saturday-night-live"]
+            :loiter_squad => ["Loiter Squad", "http://ib1.huluim.com/show/22016?size=220x124&region=us", "http://www.hulu.com/loiter-squad"]
              },
            :hbogo => [],
           :prime => [],
@@ -87,11 +87,41 @@
       },
     },
     :drama_tv => {
-          :netflix => [],
-          :hulu => [],
-           :hbogo => [],
-           :prime => [],
-          :other =>[]
+      :workplace =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :crimes => {
+        :netflix => {
+          :bones => ["Bones", "http://cdn0.nflximg.net/webp/9298/11379298.webp","http://www.netflix.com/title/70136123"], 
+          :l_o_svu => ["Law and Order SVU", "http://cdn1.nflximg.net/webp/3687/12043687.webp", "http://www.netflix.com/title/70140403"], 
+          :blacklist => ["Blacklist", "http://cdn0.nflximg.net/webp/9344/3719344.webp", "http://www.netflix.com/title/70281312"], 
+          :sherlock => ["Sherlock", "http://cdn0.nflximg.net/webp/7250/9747250.webp", "http://www.netflix.com/title/70202589"], 
+          :luther => ["Luther","http://cdn1.nflximg.net/webp/0899/3960899.webp", "http://www.netflix.com/title/70175633"], 
+          :dexter=> ["Dexter", "http://cdn0.nflximg.net/webp/1274/3861274.webp", "http://www.netflix.com/title/70136126"]
+          },
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :teen =>{
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        },
+      :other => {
+        :netflix => {},
+        :hulu => {},
+        :hbogo => {},
+        :prime => {},
+          :other =>{}
+        }
       },
 
 }

@@ -8,34 +8,606 @@
   <body class="home">
     <%  if @subgenre.tvsubgenre == "Sitcom" %>
     <h1> TV Shows: Comedy - Sitcom </h1>
-    <!--   display sitcom hashes here   -->
-    <h2>Netflix</h2> 
-    <% @tv[:comedy_tv][:sitcom_tv][:netflix].each do %>
-    <img alt="thumbnail" src= "<%[1]%>">
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:comedy_tv][:sitcom_tv][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
       <%end%>
-      <h2>Hulu</h2>  
-    <% @tv[:comedy_tv][:sitcom_tv][:hulu].each do %>
-    <img alt="thumbnail" src= "<%[1]%>">
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:comedy_tv][:sitcom_tv][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
       <%end%>
-     <h2>Amazon Prime</h2>
-      <% @tv[:comedy_tv][:sitcom_tv][:prime].each do %>
-    <img alt="thumbnail" src= "<%[1]%>">
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:comedy_tv][:sitcom_tv][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="30%" height="30%">
+    </a>
       <%end%>
-    <h2>HBO GO</h2>
-       <% @tv[:comedy_tv][:sitcom_tv][:hbogo].each do %>
-    <img alt="thumbnail" src= "<%[1]%>">
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png"width="20%" height="20%"> </h2> 
+       <% @tv[:comedy_tv][:sitcom_tv][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
        <%end%>
     <h2>Other</h2>
-      <% @tv[:comedy_tv][:sitcom_tv][:other].each do %>
-    <img alt="thumbnail" src= "<%[1]%>">
+      <% @tv[:comedy_tv][:sitcom_tv][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
       <%end%>
-    <%#  elsif @subgenre == @talk_show_tv %>
-<!--     <h1> TV Shows: Comedy - Talk Show </h1>    -->
-    <!--   display talk show hashes here   -->
     
-    <% # elsif @subgenre == @satire_tv %>
-<!--     <h1> TV Shows: Comedy - Satire </h1> -->
-<!--   display satire hashes here   -->
+    <%  elsif @subgenre.tvsubgenre == "Talk-Show" %>
+    <h1> TV Shows: Comedy - Talk Show </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:comedy_tv][:talk_show_tv][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:comedy_tv][:talk_show_tv][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:comedy_tv][:talk_show_tv][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:comedy_tv][:talk_show_tv][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:comedy_tv][:talk_show_tv][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+
+    <%  elsif @subgenre.tvsubgenre == "Satire" %>
+    <h1> TV Shows: Comedy - Satires </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:comedy_tv][:satire_tv][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:comedy_tv][:satire_tv][:hulu].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+     </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:comedy_tv][:satire_tv][:prime].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:comedy_tv][:satire_tv][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:comedy_tv][:satire_tv][:other].each do |info|%>
+      <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>">
+      </a>
+        <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Sketch TV" %>
+    <h1> TV Shows: Comedy - Sketch TV </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:comedy_tv][:sketch_tv][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:comedy_tv][:sketch_tv][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:comedy_tv][:sketch_tv][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:comedy_tv][:sketch_tv][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:comedy_tv][:sketch_tv][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    
+    
+    
+    <%  elsif @subgenre.tvsubgenre == "Workplace" %>
+    <h1> TV Shows: Drama - Workplace</h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:drama_tv][:workplace][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:drama_tv][:workplace][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+    <% @tv[:drama_tv][:workplace][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png"width="20%" height="20%"> </h2> 
+       <% @tv[:drama_tv][:workplace][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:drama_tv][:workplace][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Crime" %>
+    <h1> TV Shows: Drama - Crime Shows </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:drama_tv][:crimes][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:drama_tv][:crimes][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="33%" height="33%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:drama_tv][:crimes][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="33%" height="33%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:drama_tv][:crimes][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="34%" height="34%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:drama_tv][:crimes][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+
+    <%  elsif @subgenre.tvsubgenre == "Teen" %>
+    <h1> TV Shows: Drama - Teens </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:drama_tv][:teen][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:drama_tv][:teen][:hulu].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+     </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:drama_tv][:teen][:prime].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:drama_tv][:teen][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:drama_tv][:teen][:other].each do |info|%>
+      <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>">
+      </a>
+        <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Family" %>
+    <h1> TV Shows: Drama - Families </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:drama_tv][:family][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:drama_tv][:family][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:drama_tv][:family][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:drama_tv][:family][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:drama_tv][:family][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    
+    
+        
+    <%  elsif @subgenre.tvsubgenre == "Futuristic" %>
+    <h1> TV Shows: Sci-Fi/Fantasy - Futuristic </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:sci_fi_tv][:futuristic][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:sci_fi_tv][:futuristic][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:sci_fi_tv][:futuristic][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:sci_fi_tv][:futuristic][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:sci_fi_tv][:futuristic][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+
+    <%  elsif @subgenre.tvsubgenre == "Medieval" %>
+    <h1> TV Shows: Sci-Fi/Fantasy - Medieval </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:sci_fi_tv][:medieval][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:sci_fi_tv][:medieval][:hulu].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+     </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:sci_fi_tv][:medieval][:prime].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:sci_fi_tv][:medieval][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:sci_fi_tv][:medieval][:other].each do |info|%>
+      <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>">
+      </a>
+        <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Dystopian" %>
+    <h1> TV Shows: Sci-Fi/Fantasy - Dystopian</h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:sci_fi_tv][:dystopian][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:sci_fi_tv][:dystopian][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:sci_fi_tv][:dystopian][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:sci_fi_tv][:dystopian][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:sci_fi_tv][:dystopian][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    
+    
+    
+    <%  elsif @subgenre.tvsubgenre == "Food/Cooking" %>
+    <h1> TV Shows: Reality - Food/Cooking </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:reality_tv][:food][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:reality_tv][:food][:hulu].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+     </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:reality_tv][:food][:prime].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:reality_tv][:food][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:reality_tv][:food][:other].each do |info|%>
+      <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>">
+      </a>
+        <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Talent Show" %>
+    <h1> TV Shows: Reality - Talent Shows </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:reality_tv][:talent][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:reality_tv][:talent][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:reality_tv][:talent][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:reality_tv][:talent][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:reality_tv][:talent][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Survival" %>
+    <h1> TV Shows: Reality - Survival</h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:reality_tv][:survival][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:reality_tv][:survival][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+    <% @tv[:reality_tv][:survival][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png"width="20%" height="20%"> </h2> 
+       <% @tv[:reality_tv][:survival][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:reality_tv][:survival][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    
+    <%  elsif @subgenre.tvsubgenre == "Petty Drama" %>
+    <h1> TV Shows: Reality - Petty Drama </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:reality_tv][:dramatic][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:reality_tv][:dramatic][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:reality_tv][:dramatic][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:reality_tv][:dramatic][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:reality_tv][:dramatic][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+
+    <%  elsif @subgenre.tvsubgenre == "Workplace Reality" %>
+    <h1> TV Shows: Reality - Workplace</h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:reality_tv][:workplace_reality][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:reality_tv][:workplace_reality][:hulu].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+     </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:reality_tv][:workplace_reality][:prime].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:reality_tv][:workplace_reality][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:reality_tv][:workplace_reality][:other].each do |info|%>
+      <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>">
+      </a>
+        <%end%>
+    
+    
+    
+    <%  elsif @subgenre.tvsubgenre == "Ages 0-6" %>
+    <h1> TV Shows: Kids - Ages 0-6 </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:kids_tv][:age_0][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2> 
+    <% @tv[:kids_tv][:age_0][:hulu].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+    </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:kids_tv][:age_0][:prime].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:kids_tv][:age_0][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:kids_tv][:age_0][:other].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+     <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+
+    <%  elsif @subgenre.tvsubgenre == "Ages 7+" %>
+    <h1> TV Shows: Kids - Ages 7+ </h1>
+    <h2> <img alt="Netflix" src="http://nativeadvertisinginstitute.com/wp-content/uploads/2015/03/Netflix_Logo_Digital-Video.png" width="20%" height="20%"> </h2> 
+    <% @tv[:kids_tv][:age_7][:netflix].each do |info| %>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>">
+    </a>
+      <%end%>
+    <h2> <img alt="Hulu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hulu_logo.svg/1280px-Hulu_logo.svg.png" width="17%" height="17%"> </h2>  
+    <% @tv[:kids_tv][:age_7][:hulu].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>" width="24%" height="24%">
+     </a>
+      <%end%>
+    <h2> <img alt="Amazon Prime" src="http://matemedia.com/wp-content/uploads/2013/09/amazon-inst-video-transparent-300x75.png" width="20%" height="20%"> </h2> 
+      <% @tv[:kids_tv][:age_7][:prime].each do |info|%>
+   <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+      <%end%>
+    <h2> <img alt="HBO GO" src="http://images.latinpost.com/data/images/full/7799/hbo.png" width="20%" height="20%"> </h2>
+       <% @tv[:kids_tv][:age_7][:hbogo].each do |info|%>
+    <a href= "<%=info[1][2]%>"> 
+      <img alt="thumbnail" src= "<%=info[1][1]%>" width="27%" height="27%">
+    </a>
+       <%end%>
+    <h2>Other</h2>
+      <% @tv[:kids_tv][:age_7][:other].each do |info|%>
+      <a href= "<%=info[1][2]%>"> 
+    <img alt="thumbnail" src= "<%=info[1][1]%>">
+      </a>
+        <%end%>
+    
     
     <%end%>
   </body>
