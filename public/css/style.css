@@ -6,7 +6,24 @@ src: url("../pier-regular.otf") format("opentype");
 body.home {
   background-color: #36465D;
 }
-
+#construction{
+  height: 200px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+  color: white;
+  font-family: Pier;
+  text-align: center;
+  margin-top: 2cm;
+}
+#flatiron{
+  height: 50px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 h1 {
   color: white;
   font-family: Pier;
